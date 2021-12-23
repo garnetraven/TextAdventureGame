@@ -1,0 +1,199 @@
+Id: -1 (Death)
+
+Id: 1 
+Location: Mountain Edge, Beginning
+Inventory: Nothing
+Other Factors: None
+Text: You wake up on the edge of Mount Lytherum. You have no recollection of how you ended up here. 
+      A voice whispers behind you...
+Options: 
+	text: Follow the voice
+	nextText: 3
+	
+	text: Jump off mountain
+	nextText: 2
+
+Id: 2 (Death)
+Location: Moutain Edge
+Text: You died...
+Options:
+	text: Restart
+	nextText: -1 (restarts game)
+
+Id: 3
+Location: Deep Dark Forest, Beginning
+Inventory: Nothing
+Other Factors: None
+Text: You followed the voice into a deep dark forest. You notice the north star while walking... 
+      You see his shadow...
+Options:
+	text: Talk to the shadow
+	nextText: 4
+
+	text: There is a light to your right.. Run to it!
+	nextText: 7
+
+Id: 4
+Location: Deep Dark Forest, Merchant
+Inventory: Nothing
+Other Factors: None
+Text: The voice turned out to be a merchant. He offers you a diamond... But only for a limb.
+Options:
+	text: Give him your right arm
+	setState: Diamond 
+	nextText: 5
+
+	text: Tell him no, and punch him!
+	nextText: 6
+
+Id: 5
+Location: Deep Dark Forest, Wolves
+Inventory: Diamond,
+Other Factors: No Right Arm,
+Text: You now have a diamond... but no right arm... You and the merchant part ways... 
+      Suddenly, a pack of wolves surround you.
+Options:
+	text: Fight them with your bare left hand!!??
+	nextText: 9
+
+	text: Pray you do not die...
+	setState: Lightning in a bottle
+	nextText: 10
+
+	text: Act like a wolf and hope they think you are one of them.
+	nextText: 11
+
+Id: 6
+Location: Deep Dark Forest, Merchant
+Inventory: Nothing
+Other Factors: None
+Text: You accidentally killed him!
+Options:
+	text: The light.. Run to it.
+	nextText: 7
+
+	text: Search his body for items...
+	setState: Sword
+	nextText: 8
+
+Id: 7
+Location: Deep Dark Forest, Lamp Post
+Inventory: Nothing
+Other Factors: None
+Text: The light source turned out to be lamp post. How strange? All alone in this forest... 
+      I better get out of here before something else comes here.
+Options:
+	text: Locate the north star from earlier and go south
+	nextText: 12
+
+	text: There is something strange about this lamp post... Search it.
+	setState: Metallic Beetle
+	nextText: 13
+
+Id: 8
+Location: Deep Dark Forest, Merchant
+Inventory: Diamond, Sword
+Other Factors: None
+Text: While you were searching, you found a sword on his body. You also go the diamond.
+      Suddenly, a pack of wolves surround you.
+Options:
+	text: Fight the wolves with your sword...
+	nextText: 14
+
+	text: Pray you do not die...
+	setState: Lightning in a bottle
+	nextText: 10
+
+	text: Act like a wolf and hope they think you are one of them.
+	nextText: 11
+
+
+Id: 9 (Death)
+Location: Deep Dark Forest, Wolves
+Text: Are you stupid? You just gave away your right hand and now you are trying to fight wolves 
+      with one hand?... You died a painful death. 
+Options:
+	text: Restart
+	nextText: -1 (Restarts game)
+
+Id: 10 
+Location: Deep Dark Forest, Wolves
+Inventory: Diamond, Sword, Lightning in a bottle
+Other Factors: None
+Text: Your prayers some how magically worked!!?? Lightning obliterated your wolf foes. All that remains is 
+      Lightning in a bottle. You pick it up...
+Options:
+	text: You thank the Lightning God and decide to go south.
+	nextText: 12
+
+Id: 10.5
+Location: Deep Dark Forest, Wolves
+Inventory: Diamond, Lightning in a bottle
+Other Factors: No Right Arm
+Text: Your prayers some how magically worked!!?? Lightning obliterated your wolf foes. 
+      The Gods mist have felt bad for you. All that remains is Lightning in a bottle. You pick it up...
+Options:
+	text: You thank the Lightning God and decide to go south.
+	nextText: 12
+
+Id: 11 (Death)
+Location: Deep Dark Forest, Wolves
+Text: This is even more pathetic than praying or trying to fight the wolves. They thought you were a 
+      dog for a second and then realized how stupid you were and ate you to tiny pieces.
+Options:
+	text: Restart
+	nextText: -1 (Restarts game)
+
+Id: 12
+Location: Town, Beginning
+Inventory: Diamond, Sword,
+Other Factors: None
+Text: You finally are out of that weird forest. You arrive at a town! You see an inn and another merchant.
+Options:
+	text: Visit the inn for the night.
+	nextText:
+
+	text: Talk to the merchant.
+	nextText:
+
+
+Id: 13
+Location: Deep Dark Forest, Lamp Post
+Inventory: Diamond, Sword, Metallic Beetle
+Other Factors: None
+Text: You found a rare metallic beetle hiding on the post. You decide to go south to get 
+      out of this creepy forest.
+Options:
+	text: Continue south
+	nextText: 12
+
+
+Id: 14
+Location: Deep Dark Forest, Wolves
+Inventory: Diamond, Sword
+Other Factors: None
+Text: You were able to kill the wolves... barely... whew... You think to yourself,
+      I am getting the hell out of this forest.
+Options:
+	text: Go south and get the hell out of here.
+	nextText: 12
+
+
+Id: 15
+Location: Town, Inn
+Inventory: Nothing
+Other Factors: None
+Text: 
+Options:
+	text: 
+	nextText: 17
+
+
+Id: 16
+Location: Town, Merchant
+Inventory: Nothing
+Other Factors: None
+Text: 
+Options:
+	text: 
+	nextText: 18
